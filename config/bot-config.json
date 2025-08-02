@@ -1,0 +1,54 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 25565,
+    "version": "1.21.1"
+  },
+  "bot": {
+    "username": "HelperBot",
+    "auth": "offline",
+    "reconnect": {
+      "enabled": true,
+      "maxAttempts": 5,
+      "delay": 5000
+    }
+  },
+  "ai": {
+    "enabled": true,
+    "model": "gpt-3.5-turbo",
+    "maxTokens": 150,
+    "temperature": 0.8,
+    "responseChance": 0.3,
+    "maxHistoryLength": 50
+  },
+  "commands": {
+    "prefix": "!",
+    "cooldown": 1000,
+    "adminOnly": [
+      "shutdown",
+      "restart",
+      "config"
+    ]
+  },
+  "features": {
+    "autoReconnect": true,
+    "healthMonitoring": true,
+    "inventoryManagement": true,
+    "pathfinding": true,
+    "pvp": false,
+    "building": true,
+    "mining": true
+  },
+  "limits": {
+    "maxBuildSize": 100,
+    "maxMineDistance": 64,
+    "maxFollowDistance": 32,
+    "guardRadius": 20
+  },
+  "messages": {
+    "welcome": "🤖 Привет! Я умный помощник. Используйте !help для списка команд.",
+    "goodbye": "👋 До свидания! Отключаюсь...",
+    "lowHealth": "⚠️ Мое здоровье на исходе! Нужна помощь!",
+    "death": "💀 Я погиб! Возрождаюсь..."
+  }
+}
